@@ -28,7 +28,7 @@ const callsToAction = [
 
 
 
-export default function Home() {
+export default function NavBar() {
 
   // SIDEBAR CONTROL AND FUNCTION
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
