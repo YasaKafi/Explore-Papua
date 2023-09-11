@@ -6,6 +6,10 @@ import { Inter } from "next/font/google";
 import { useRouter } from "next/navigation";
 import Routes from "./routes/routes";
 import imageAssets from "./utils/helpers.js";
+import CardImg from "./components/CardImg";
+import CardSenjata from "./components/CardSenjata";
+import CardAspek from "./components/CardAspek";
+import NavBar from "./components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,6 @@ export default function RootLayout({ children }) {
     router.push(path);
   };
 
-  
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -28,15 +31,21 @@ export default function RootLayout({ children }) {
             <Link href={Routes.DASHBOARD_PAGE}>Dashboard</Link>
           </li>
           <li>
-            <button onClick={()=> goToPage(Routes.SETTING_PAGE)}>Settings</button>
+            <button onClick={() => goToPage(Routes.SETTING_PAGE)}>
+              Settings
+            </button>
           </li>
-        
         </ul>
+        <NavBar />
+        <CardAspek />
+        <CardImg />
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold">Hello World</h1>
           <img src={imageAssets.imgMSinole} alt="logo" />
         </div>
-        {children}
+        <CardSenjata />
+        
+        
       </body>
     </html>
   );
