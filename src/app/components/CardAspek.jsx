@@ -10,7 +10,7 @@ export default function CardAspek() {
             <img className="w-24 h-24  rounded-full object-cover" src={imageAssets.imgFranskaisepo} alt="Workflow" />
           </div>
           <h2 className="text-xl text-center relative -top-5 font-semibold ">Card Section</h2>
-          <p>This is a sample card section with a circular container.</p>
+          <p className='font-poppins'>This is a sample card section with a circular container.</p>
           <div className="bg-white">
           
         </div>
