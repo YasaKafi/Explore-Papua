@@ -4,6 +4,10 @@ import "./globals.css";
 import "./utils/helpers.js";
 import { Inter } from "next/font/google";
 import { useRouter } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faHome, faInfo, faCompass, faImages, faUser } from "@fortawesome/free-solid-svg-icons";
+library.add(faHome, faInfo, faCompass, faImages, faUser);
 import Routes from "./routes/routes";
 import imageAssets from "./utils/helpers.js";
 import CardImg from "./components/CardImg";
@@ -37,13 +41,8 @@ export default function RootLayout({ children }) {
           </li>
         </ul>
         <NavBar />
-        <CardAspek />
-        <CardImg />
-        <div className="container mx-auto">
-          <h1 className="text-4xl font-bold">Hello World</h1>
-          <img src={imageAssets.imgMSinole} alt="logo" />
-        </div>
-        <CardSenjata />
+       
+        
         
         
       </body>
