@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "thea": "next dev",
+    "agus": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
