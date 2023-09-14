@@ -32,7 +32,7 @@ export default function NavBar() {
   };
 
   return (
-    <header className="bg-white">
+    <header className="bg-white fixed top-0 left-0 right-0 z-10">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -85,10 +85,10 @@ export default function NavBar() {
                 <li className="mb-4">
                   <Popover className="relative">
                     <Popover.Button className="block px-4 py-2 text-gray-800 ">
-                      <FontAwesomeIcon icon={faCompass} className="mr-5" />
+                      <FontAwesomeIcon icon={faCompass} className="mr-3" />
                       Ada apa di Papua
                       <ChevronDownIcon
-                        className="h-4 w-4 inline-flex text-gray-400"
+                        className="h-6 w-6 inline-flex text-gray-400"
                         aria-hidden="true"
                       />
                     </Popover.Button>
