@@ -1,5 +1,5 @@
 import React from 'react';
-import imageAssets from '../utils/helpers';
+import imageAssets from '@/utils/helpers';
 
 export default function CardWisata() {
   const backgroundImageUrl = imageAssets.imgWLorentzNationalPark;
