@@ -1,5 +1,5 @@
 import React from 'react'
-import imageAssets from '../app/utils/helpers'
+import imageAssets from '../utils/helpers'
 
 export default function CardAspek() {
   return (
