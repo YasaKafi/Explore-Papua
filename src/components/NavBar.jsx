@@ -13,11 +13,13 @@ import {
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
+import Routes from "@/routes/routes";
+
 const products = [
-  { name: "Adat istiadat", href: "#" },
-  { name: "Kisah Papua", href: "#" },
-  { name: "Perekonomian Papua", href: "#" },
-  { name: "Wisata Papua", href: "#" },
+  { name: "Adat istiadat", href: Routes.ADAT_ISTIADAT },
+  { name: "Kisah Papua", href: Routes.KISAH_PAPUA },
+  { name: "Perekonomian Papua", href: Routes.PEREKONOMIAN_PAPUA },
+  { name: "Wisata Papua", href: Routes.WISATA_PAPUA },
 ];
 
 export default function NavBar() {
@@ -38,7 +40,7 @@ export default function NavBar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href={Routes.GENERAL_PAGE} className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img className="h-8 w-auto" src={imageAssets.imageLogo} alt="" />
           </a>
@@ -66,7 +68,7 @@ export default function NavBar() {
               <ul className="py-4">
                 <li className="mb-4">
                   <a
-                    href="#"
+                    href={Routes.HOME_PAGE}
                     className="block px-4 py-2 text-gray-800"
                   >
                     <FontAwesomeIcon icon={faHome} className="mr-5" />
@@ -74,13 +76,15 @@ export default function NavBar() {
                   </a>
                 </li>
                 <li className="mb-4 ml-1">
+                
                   <a
-                    href="#"
+                    href={Routes.KILAS_PAPUA}
                     className="block px-4 py-2 text-gray-800"
                   >
                     <FontAwesomeIcon icon={faInfo} className="mr-7" />
                     Kilas Papua
                   </a>
+                 
                 </li>
                 <li className="mb-4">
                   <Popover className="relative">
@@ -124,7 +128,7 @@ export default function NavBar() {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="#"
+                    href={Routes.GALERI_PAPUA}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-green-600"
                   >
                     <FontAwesomeIcon icon={faImages} className="mr-4" />
@@ -133,7 +137,7 @@ export default function NavBar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href={Routes.DEVELOPER_PAGE}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-green-600"
                   >
                     <FontAwesomeIcon icon={faUser} className="mr-5" />
@@ -147,13 +151,13 @@ export default function NavBar() {
 
         <Popover.Group className="hidden lg:flex lg:gap-x-10 mx-10">
           <a
-            href="#"
+            href={Routes.HOME_PAGE}
             className="text-sm font-semibold leading-6 text-gray-700 hover:text-green-600"
           >
             Utama
           </a>
           <a
-            href="#"
+            href={Routes.KILAS_PAPUA}
             className="text-sm font-semibold leading-6 text-gray-900 hover:text-green-600"
           >
             Kilas Papua
@@ -196,13 +200,13 @@ export default function NavBar() {
             </Transition>
           </Popover>
           <a
-            href="#"
+            href={Routes.GALERI_PAPUA}
             className="text-sm font-semibold leading-6 text-gray-900 hover:text-green-600"
           >
             Galeri Papua
           </a>
           <a
-            href="#"
+            href={Routes.DEVELOPER_PAGE}
             className="text-sm font-semibold leading-6 text-gray-900 hover:text-green-600"
           >
             Pengembang
