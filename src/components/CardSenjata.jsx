@@ -1,6 +1,6 @@
 
 import React from 'react';
-import imageAssets from '../app/utils/helpers';
+import imageAssets from '../utils/helpers';
 
 const CardSenjata = () => {
   return (
