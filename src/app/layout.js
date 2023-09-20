@@ -15,6 +15,7 @@ import CardSenjata from "./components/CardSenjata";
 import CardAspek from "./components/CardAspek";
 import NavBar from "./components/NavBar";
 import SearchBar from "./components/SearchBar";
+import CardWisata from "./components/CardWisata";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,12 +31,11 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
        
         <NavBar />
-        
+
         <CardAspek/>
         <SearchBar />
         <CardSenjata/>
-       
-        
+        <CardWisata/>       
         
         
       </body>
