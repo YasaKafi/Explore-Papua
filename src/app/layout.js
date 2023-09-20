@@ -10,11 +10,11 @@ import { faHome, faInfo, faCompass, faImages, faUser } from "@fortawesome/free-s
 library.add(faHome, faInfo, faCompass, faImages, faUser);
 import Routes from "./routes/routes";
 import imageAssets from "./utils/helpers.js";
-import CardImg from "./components/CardImg";
-import CardSenjata from "./components/CardSenjata";
-import CardAspek from "./components/CardAspek";
-import NavBar from "./components/NavBar";
-import SearchBar from "./components/SearchBar";
+import CardImg from "../components/CardImg";
+import CardSenjata from "../components/CardSenjata";
+import CardAspek from "../components/CardAspek";
+import NavBar from "../components/NavBar";
+import SearchBar from "../components/SearchBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,11 +29,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
        
-        <NavBar />
+    
+        {children}
         
-        <CardAspek/>
-        <SearchBar />
-        <CardSenjata/>
+
        
         
         
