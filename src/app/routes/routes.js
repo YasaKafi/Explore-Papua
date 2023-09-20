@@ -1,6 +1,6 @@
 const Routes = {
     HOME_PAGE: '/',
-    DASHBOARD_PAGE: '/pages/dashboard',
+    DASHBOARD_PAGE: '/dashboard',
     SETTING_PAGE: '/settings',
   };
   

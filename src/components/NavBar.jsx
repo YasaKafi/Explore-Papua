@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import imageAssets from "../utils/helpers";
+import imageAssets from "../app/utils/helpers";
 import { Popover, Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
