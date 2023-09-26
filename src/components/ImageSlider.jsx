@@ -5,9 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import imageAssets from '../utils/helpers';
 
 
-const ImageSlider = () => {
+const ImageSlider = (props) => {
+  const { rtl } = props;
   const settings = {
     dots: true,
+    rtl: rtl,
     infinite: true,
     speed: 1000,
     slidesToShow:7,
