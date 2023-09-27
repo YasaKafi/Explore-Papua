@@ -15,7 +15,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 import Routes from "@/routes/routes";
 
-const products = [
+const dropdown = [
   { name: "Adat istiadat", href: Routes.ADAT_ISTIADAT },
   { name: "Kisah Papua", href: Routes.KISAH_PAPUA },
   { name: "Perekonomian Papua", href: Routes.PEREKONOMIAN_PAPUA },
@@ -115,7 +115,7 @@ export default function NavBar() {
                       leaveTo="opacity-0 translate-y-1 delay-500"
                     >
                       <Popover.Panel className="absolute left-3 top-full z-10 mt-3 w-48 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                        {products.map((item) => (
+                        {dropdown.map((item) => (
                           <div
                             key={item.name}
                             className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
@@ -190,7 +190,7 @@ export default function NavBar() {
   <div
     className="absolute -left-2 top-full z-10 mt-3 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 p-4 delay-150 hover:delay-500 transition-all duration-300"
   >
-    {products.map((item) => (
+    {dropdown.map((item) => (
       <div
         key={item.name}
         className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-100"
