@@ -37,7 +37,6 @@ const SearchBar = () => {
           type="text"
           id="simple-search"
           className="bg-white border text-green-900 text-sm rounded-lg block w-full pl-4 p-2.5"
-          placeholder="Search branch name..."
           value={searchText}
           onChange={handleInputChange}
           required
