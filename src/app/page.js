@@ -20,7 +20,7 @@ export default function Home(){
             <ImageSlider rtl={true}/>
             <ImageSlider rtl={false}/> */}
             {/* <KilasPapua/> */}
-            <Explore/>
+            <KilasPapua/>
 
         </body>
     );
