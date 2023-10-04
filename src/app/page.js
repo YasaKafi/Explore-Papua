@@ -7,6 +7,8 @@ import ImageSlider from "@/components/ImageSlider";
 import KilasPapua from "@/components/KilasPapua"; 
 import CardExplore from "@/components/CardExplore"; 
 import Explore from "@/components/Explore";
+import ExploreSlider from "@/components/ExploreSlider"
+import DeveloperCard from "@/components/DeveloperCard";
 
 
 
@@ -20,8 +22,8 @@ export default function Home(){
             <ImageSlider rtl={true}/>
             <ImageSlider rtl={false}/> */}
             {/* <KilasPapua/> */}
-            <KilasPapua/>
-
+            {/* <ExploreSlider/> */}
+            <DeveloperCard/>
         </body>
     );
 }
