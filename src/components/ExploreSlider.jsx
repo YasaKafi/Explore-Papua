@@ -29,7 +29,12 @@ const ExploreSlider = (props) => {
   };
 
   return (
-    <div className="container  mx-auto w-5/12 md:w-5/12 lg:-ml-0.5 sm:w-4/12 ">
+    <div className="flex-col md:flex md:flex-col lg:flex-row lg:mx-auto lg:flex xl:items-center  flex items-center  ">
+    <div className="bg-primary items-center w-64 h-35 py-5 lg:py-20 mb-3  lg:ml-auto rounded-xl">
+        <h1 className="text-center text-xl font-poppins">ADA APA DI</h1>
+        <h1 className="font-semibold text-center text-2xl font-poppins">PAPUA?</h1>
+      </div>
+      <div className="container  mx-auto w-8/12 md:w-5/12  lg:-ml-0.5 sm:w-4/12 ">
       <Slider {...settings}>
       <div className="px-3">
         <img className ="rounded-t-lg " src={imageAssets.imgMUlatSagu} alt="" />
@@ -61,6 +66,8 @@ const ExploreSlider = (props) => {
       </div>
       
       </Slider>
+    </div>
+    
     </div>
   );
 };
