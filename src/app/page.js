@@ -23,7 +23,16 @@ export default function Home(){
             <ImageSlider rtl={false}/> */}
             {/* <KilasPapua/> */}
             {/* <ExploreSlider/> */}
-            <DeveloperCard/>
+            <DeveloperCard
+            name="Yasa Kafi"
+            jobTitle="Front-End Developer"
+            socialMedia1={{  link: "https://www.instagram.com/yaskrazz/" }}
+            socialMedia2={{  link: "https://github.com/YasaKafi" }}
+            socialMedia3={{  link: "https://www.linkedin.com/in/yasa-razzan-189b56260/" }}
+            emailAddress="yasazerina@gmail.com"
+            
+            />
+            
         </body>
     );
 }
