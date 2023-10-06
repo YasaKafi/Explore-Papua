@@ -4,6 +4,7 @@ import React from "react";
 import Routes from "../routes/routes";
 import NavBar from "../components/NavBar";
 import ImageSlider from "@/components/ImageSlider";
+import ExploreSlider from "@/components/ExploreSlider";
 
 const rtl = true
 
@@ -11,10 +12,7 @@ export default function Home(){
 
     return(
         <body>
-            <ImageSlider rtl={false}/>
-            <ImageSlider rtl={true}/>
-            <ImageSlider rtl={false}/>
-            <h1>Home</h1>
+           <ExploreSlider/>
         </body>
     );
 }
