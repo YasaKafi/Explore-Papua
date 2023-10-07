@@ -10,6 +10,7 @@ import Explore from "@/components/Explore";
 import ExploreSlider from "@/components/ExploreSlider"
 import DeveloperCard from "@/components/DeveloperCard";
 import PieChart from "@/components/PieChart";
+import CardImg from "@/components/CardImg";
 
 const rtl = true
 
@@ -22,14 +23,13 @@ export default function Home(){
         </div>
       );
     return(
-        <body>
+        <>
             {/* <ImageSlider rtl={false}/>
             <ImageSlider rtl={true}/>
             <ImageSlider rtl={false}/> */}
             {/* <KilasPapua/> */}
             {/* <ExploreSlider/> */}
-            <PieChart data={data} content={content} />
-
+            {/* <PieChart data={data} content={content} /> */}
             {/* <DeveloperCard
             name="Yasa Kafi"
             jobTitle="Front-End Developer"
@@ -39,7 +39,11 @@ export default function Home(){
             emailAddress="yasazerina@gmail.com"
             
             /> */}
-            
-        </body>
+            <div className="flex flex-row gap-3 items-center justify-center">
+            <CardImg/>
+            <CardImg/>
+            <CardImg/>
+            </div>
+        </>
     );
 }
