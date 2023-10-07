@@ -9,6 +9,7 @@ import CardExplore from "@/components/CardExplore";
 import Explore from "@/components/Explore";
 import ExploreSlider from "@/components/ExploreSlider"
 import DeveloperCard from "@/components/DeveloperCard";
+import CardImg from "@/components/CardImg";
 
 
 
@@ -23,7 +24,7 @@ export default function Home(){
             <ImageSlider rtl={false}/> */}
             {/* <KilasPapua/> */}
             {/* <ExploreSlider/> */}
-            <DeveloperCard
+            {/* <DeveloperCard
             name="Yasa Kafi"
             jobTitle="Front-End Developer"
             socialMedia1={{  link: "https://www.instagram.com/yaskrazz/" }}
@@ -31,7 +32,8 @@ export default function Home(){
             socialMedia3={{  link: "https://www.linkedin.com/in/yasa-razzan-189b56260/" }}
             emailAddress="yasazerina@gmail.com"
             
-            />
+            /> */
+            <CardImg/>}
             
         </body>
     );
