@@ -29,21 +29,7 @@ export default function Home(){
             <ImageSlider rtl={false}/> */}
             {/* <KilasPapua/> */}
             {/* <ExploreSlider/> */}
-            {/* <PieChart data={data} content={content} /> */}
-            {/* <DeveloperCard
-            name="Yasa Kafi"
-            jobTitle="Front-End Developer"
-            socialMedia1={{  link: "https://www.instagram.com/yaskrazz/" }}
-            socialMedia2={{  link: "https://github.com/YasaKafi" }}
-            socialMedia3={{  link: "https://www.linkedin.com/in/yasa-razzan-189b56260/" }}
-            emailAddress="yasazerina@gmail.com"
-            
-            /> */}
-            <div className="flex flex-row gap-3 items-center justify-center">
-            <CardImg/>
-            <CardImg/>
-            <CardImg/>
-            </div>
-        </>
+            <DeveloperCard/>
+        </body>
     );
 }
