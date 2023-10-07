@@ -9,21 +9,27 @@ import CardExplore from "@/components/CardExplore";
 import Explore from "@/components/Explore";
 import ExploreSlider from "@/components/ExploreSlider"
 import DeveloperCard from "@/components/DeveloperCard";
-import Footer from "@/components/Footer";
-
-
+import PieChart from "@/components/PieChart";
+import CardImg from "@/components/CardImg";
 
 const rtl = true
 
 export default function Home(){
 
+    const data = [54, 16, 14, 16];
+    const content = (
+        <div className="text-black text-base">
+          Perekonomian Papua masih didominasi oleh sektor-sektor primer, yaitu pertambangan dan penggalian, pertanian, dan kehutanan. Namun, sektor-sektor sekunder, seperti industri pengolahan dan perdagangan, juga mulai menunjukkan pertumbuhan yang positif. Sektor pariwisata juga memiliki potensi yang besar untuk dikembangkan di Papua, mengingat wilayah ini memiliki kekayaan alam dan budaya yang luar biasa.
+        </div>
+      );
     return(
-        <body>
+        <>
             {/* <ImageSlider rtl={false}/>
             <ImageSlider rtl={true}/>
             <ImageSlider rtl={false}/> */}
             {/* <KilasPapua/> */}
             {/* <ExploreSlider/> */}
+            {/* <PieChart data={data} content={content} /> */}
             {/* <DeveloperCard
             name="Yasa Kafi"
             jobTitle="Front-End Developer"
@@ -33,7 +39,11 @@ export default function Home(){
             emailAddress="yasazerina@gmail.com"
             
             /> */}
-            <Footer/>
-        </body>
+            <div className="flex flex-row gap-3 items-center justify-center">
+            <CardImg/>
+            <CardImg/>
+            <CardImg/>
+            </div>
+        </>
     );
 }
