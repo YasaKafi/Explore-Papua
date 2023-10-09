@@ -16,12 +16,7 @@ const rtl = true
 
 export default function Home(){
 
-    const data = [54, 16, 14, 16];
-    const content = (
-        <div className="text-black text-base">
-          Perekonomian Papua masih didominasi oleh sektor-sektor primer, yaitu pertambangan dan penggalian, pertanian, dan kehutanan. Namun, sektor-sektor sekunder, seperti industri pengolahan dan perdagangan, juga mulai menunjukkan pertumbuhan yang positif. Sektor pariwisata juga memiliki potensi yang besar untuk dikembangkan di Papua, mengingat wilayah ini memiliki kekayaan alam dan budaya yang luar biasa.
-        </div>
-      );
+    
     return(
         <>
             {/* <ImageSlider rtl={false}/>
@@ -30,6 +25,6 @@ export default function Home(){
             {/* <KilasPapua/> */}
             {/* <ExploreSlider/> */}
             <DeveloperCard/>
-        </body>
+        </>
     );
 }
