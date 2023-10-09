@@ -27,7 +27,7 @@ const SearchBar = () => {
   };
 
   return (
-    <form className="flex justify-center items-center mx-auto" onSubmit={handleSubmit}>
+    <form className="flex justify-center items-center mx-auto mt-32 w-screen" onSubmit={handleSubmit}>
       <label htmlFor="simple-search" className="sr-only">
         Search
       </label>
