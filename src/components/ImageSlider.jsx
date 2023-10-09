@@ -35,7 +35,7 @@ const ImageSlider = (props) => {
   };
 
   return (
-    <div className="container  mx-auto">
+    <div className="container  mr-20 ml-20">
       <Slider {...settings}>
       <div className="px-1">
           <img src={imageAssets.imgMEurimoo} alt="Image 1" />

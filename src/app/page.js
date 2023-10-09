@@ -11,6 +11,15 @@ import ExploreSlider from "@/components/ExploreSlider"
 import DeveloperCard from "@/components/DeveloperCard";
 import PieChart from "@/components/PieChart";
 import CardImg from "@/components/CardImg";
+import SliderWisata from "@/components/SliderWisata";
+import CardWisata from "@/components/CardWisata";
+
+import SwiperCore, { EffectCoverflow, Pagination, Navigation } from 'swiper';
+
+
+// Set up Swiper modules
+SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
+
 
 const rtl = true
 
@@ -39,11 +48,14 @@ export default function Home(){
             emailAddress="yasazerina@gmail.com"
             
             /> */}
-            <div className="flex flex-row gap-3 items-center justify-center">
+            {/* <div className="flex flex-row gap-3 items-center justify-center">
             <CardImg/>
             <CardImg/>
             <CardImg/>
-            </div>
+            </div> */}
+            <SliderWisata/>
+            <CardWisata/>
+            {/* <App/> */}
         </>
     );
 }
