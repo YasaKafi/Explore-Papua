@@ -14,7 +14,7 @@ const ImageSlider = (props) => {
     speed: 1000,
     slidesToShow:7,
     autoplay: true, 
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     arrows : false,
     pauseOnHover: false,
     pauseOnFocus: false,
@@ -35,7 +35,8 @@ const ImageSlider = (props) => {
   };
 
   return (
-    <div className="container  mr-20 ml-20">
+    
+    <div className="container  mx-auto">
       <Slider {...settings}>
       <div className="px-1">
           <img src={imageAssets.imgMEurimoo} alt="Image 1" />

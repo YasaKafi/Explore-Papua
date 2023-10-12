@@ -2,7 +2,6 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <body className="bg-white">
       <footer className="flex flex-col items-center justify-center">
         <div className="flex flex-row gap-3 py-5 underline text-sm">
           <a href="#">Privacy Policy</a>            
@@ -12,7 +11,6 @@ const Footer = () => {
         <hr className="border-white border-1 w-10/12 " />
         <h2 className="text-lg pt-3 md:font-semibold md:text-xl ">2023 Resume. All right reserved.</h2>
       </footer>
-    </body>
   );
 }
 

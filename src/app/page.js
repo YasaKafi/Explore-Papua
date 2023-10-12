@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Routes from "../routes/routes";
 import NavBar from "../components/NavBar";
+import SearchBar from "@/components/SearchBar";
 import ImageSlider from "@/components/ImageSlider";
 import KilasPapua from "@/components/KilasPapua"; 
 import CardExplore from "@/components/CardExplore"; 
@@ -10,9 +11,13 @@ import Explore from "@/components/Explore";
 import ExploreSlider from "@/components/ExploreSlider"
 import DeveloperCard from "@/components/DeveloperCard";
 import PieChart from "@/components/PieChart";
+import Footer from "@/components/Footer";
 import CardImg from "@/components/CardImg";
 import SliderWisata from "@/components/SliderWisata";
 import CardWisata from "@/components/CardWisata";
+import GalleryPapua from "@/components/GalleryPapua";
+import Header from "@/components/Header";
+
 
 import SwiperCore, { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
@@ -21,36 +26,19 @@ import SwiperCore, { EffectCoverflow, Pagination, Navigation } from 'swiper';
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 
-const rtl = true
+
 
 export default function Home(){
 
     
     return(
         <>
-            {/* <ImageSlider rtl={false}/>
-            <ImageSlider rtl={true}/>
-            <ImageSlider rtl={false}/> */}
-            {/* <KilasPapua/> */}
-            {/* <ExploreSlider/> */}
-            {/* <PieChart data={data} content={content} /> */}
-            {/* <DeveloperCard
-            name="Yasa Kafi"
-            jobTitle="Front-End Developer"
-            socialMedia1={{  link: "https://www.instagram.com/yaskrazz/" }}
-            socialMedia2={{  link: "https://github.com/YasaKafi" }}
-            socialMedia3={{  link: "https://www.linkedin.com/in/yasa-razzan-189b56260/" }}
-            emailAddress="yasazerina@gmail.com"
-            
-            /> */}
-            {/* <div className="flex flex-row gap-3 items-center justify-center">
-            <CardImg/>
-            <CardImg/>
-            <CardImg/>
-            </div> */}
-            <SliderWisata/>
-            <CardWisata/>
-            {/* <App/> */}
+            <NavBar/>
+            <Header/>
+            <KilasPapua/>
+            <Explore/>
+            <GalleryPapua/>
+            <Footer/>
         </>
     );
 }

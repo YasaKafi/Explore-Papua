@@ -4,7 +4,7 @@ import imageAssets from "@/utils/helpers";
 
 const KilasPapua = ()=>{
     return (
-        <div>
+        <div className="mt-16">
             <h3 className="bg-primary text-center py-3  text-lg font-poppins font-semibold w-7/12 max-w-90 mx-auto rounded-xl relative top-6 sm:w-5/12 md:w-4/12 lg:w-3/12">Sekilas tentang Papua</h3>
             <div className="bg-white mx-10 rounded-2xl  flex-col gap-5  sm:flex-col sm:mx-20  lg:flex-row lg:justify-center lg:mx-52 flex py-10 px-10">
                 <img className="mx-auto w-11/12 h-9/12 object-cover sm:w-11/12 md:w-10/12 lg:w-7/12 lg:mx-0" src={imageAssets.imgMIkanBakarManokwari} alt="" />
