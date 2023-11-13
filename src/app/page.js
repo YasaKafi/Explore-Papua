@@ -53,9 +53,11 @@ export default function Home(){
             <CardImg/>
             <CardImg/>
             </div> */}
-            <SliderWisata/>
-            <CardWisata/>
+            {/* <SliderWisata/>
+            <CardWisata/> */}
             {/* <App/> */}
+            <NavBar/>
+            <MyCarousel/>
         </>
     );
 }
