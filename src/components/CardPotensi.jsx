@@ -4,7 +4,8 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
 
 
-export default function CardPotensi() {
+export default function CardPotensi({ title, description }) {
+
   const [isContentVisible, setIsContentVisible] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
 
@@ -15,12 +16,12 @@ export default function CardPotensi() {
   
 
   return (
-    <div className=" flex items-center justify-center mt-20">
+    <div className=" flex items-center justify-center ">
 
-    <Popover className="bg-white p-5 border border-[#c9c6c655] rounded-lg w-[350px] group is-active">
+    <Popover className="bg-[#414141] p-5 border border-[#bdbaba55] rounded-lg w-[350px] group is-active">
       <div className="flex-column">
-        <h3 className="group-[.is-active]:font-bold text-base text-black flex justify-between">
-          Potensi Title
+        <h3 className="group-[.is-active]:font-bold text-base text-[#FAFAFA] flex justify-between">
+          {title}
           <div className="h-5 w-5 bg-slate-500 rounded-full ">
           <ChevronDownIcon
             className={`h-6 w-6 inline-flex text-gray-400 transform transition-transform ${
@@ -41,17 +42,10 @@ export default function CardPotensi() {
           leaveFrom="opacity-100 translate-y-0 delay-200"
           leaveTo="opacity-0 translate-y-1 delay-200"
         >
-
           {(isContentVisible) => (
             <div className={`max-h-0 overflow-hidden ${isContentVisible ? "max-h-[200px]" : "max-h-0"}`}>
               <p className="text-sm text-gray-800">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores cupiditate tempora, corporis quasi molestias provident
-                voluptate debitis quod cumque aspernatur doloremque error quas
-                sequi! Pariatur at veniam cum rerum eos saepe nobis reprehenderit
-                quos eius nisi sint architecto quis, repellendus, facilis culpa
-                aperiam consequatur maiores nihil numquam nesciunt eaque
-                temporibus.
+                {description}
               </p>
             </div>
           )}
