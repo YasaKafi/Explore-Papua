@@ -13,24 +13,25 @@ import PieChart from "@/components/PieChart";
 import CardImg from "@/components/CardImg";
 import SliderWisata from "@/components/SliderWisata";
 import CardWisata from "@/components/CardWisata";
+import PerekonomianPapua from "./pages/perekonomian-papua/page";
 
-import SwiperCore, { EffectCoverflow, Pagination, Navigation } from 'swiper';
+// import SwiperCore, { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 
 // Set up Swiper modules
-SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
+// SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 
-const rtl = true
+// const rtl = true
 
 export default function Home(){
 
-    const data = [54, 16, 14, 16];
-    const content = (
-        <div className="text-black text-base">
-          Perekonomian Papua masih didominasi oleh sektor-sektor primer, yaitu pertambangan dan penggalian, pertanian, dan kehutanan. Namun, sektor-sektor sekunder, seperti industri pengolahan dan perdagangan, juga mulai menunjukkan pertumbuhan yang positif. Sektor pariwisata juga memiliki potensi yang besar untuk dikembangkan di Papua, mengingat wilayah ini memiliki kekayaan alam dan budaya yang luar biasa.
-        </div>
-      );
+    // const data = [54, 16, 14, 16];
+    // const content = (
+    //     <div className="text-black text-base">
+    //       Perekonomian Papua masih didominasi oleh sektor-sektor primer, yaitu pertambangan dan penggalian, pertanian, dan kehutanan. Namun, sektor-sektor sekunder, seperti industri pengolahan dan perdagangan, juga mulai menunjukkan pertumbuhan yang positif. Sektor pariwisata juga memiliki potensi yang besar untuk dikembangkan di Papua, mengingat wilayah ini memiliki kekayaan alam dan budaya yang luar biasa.
+    //     </div>
+    //   );
     return(
         <>
             {/* <ImageSlider rtl={false}/>
@@ -53,9 +54,11 @@ export default function Home(){
             <CardImg/>
             <CardImg/>
             </div> */}
-            <SliderWisata/>
-            <CardWisata/>
+            {/* <SliderWisata/> */}
+            {/* <CardWisata/> */}
             {/* <App/> */}
+            {<PerekonomianPapua />}
+
         </>
     );
 }
