@@ -14,7 +14,7 @@ const ImageSlider = (props) => {
     speed: 1000,
     slidesToShow:7,
     autoplay: true, 
-    autoplaySpeed: 5000,
+    autoplaySpeed: 9000,
     arrows : false,
     pauseOnHover: false,
     pauseOnFocus: false,

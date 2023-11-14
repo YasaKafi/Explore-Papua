@@ -20,9 +20,11 @@ import Header from "@/components/Header";
 
 
 import SwiperCore, { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import HeaderNew from "@/components/New/HeaderNew";
+import MenuNew from "@/components/New/MenuNew";
+import FooterNew from "@/components/New/FooterNew";
 
 
-// Set up Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 
@@ -32,13 +34,13 @@ export default function Home(){
 
     
     return(
-        <>
+        <body className="bg-secondary">
             <NavBar/>
-            <Header/>
+            <HeaderNew/>
             <KilasPapua/>
-            <Explore/>
+            <MenuNew/>
             <GalleryPapua/>
-            <Footer/>
-        </>
+            <FooterNew/>
+        </body>
     );
 }

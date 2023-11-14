@@ -9,6 +9,7 @@ const GalleryPapua = () => {
 
   return (
     <div className="mt-10 mx-10">
+      <h1 className="text-center text-3xl font-poppins font-semibold mb-5">Galeri Papua</h1>
             <ImageSlider/>
             <ImageSlider rtl={true}/>
             <ImageSlider/>
