@@ -33,6 +33,7 @@ const imgRHonai = "/assets/Rumah_Adat/Rumah_Honai.png";
 const imgREbei = "/assets/Rumah_Adat/Rumah_Ebei.jpg";
 
 // <-------- Assets Pakaian Adat (P) --------> //
+// <-------- Assets Pakaian Adat (P) --------> //
 const imgPYokai = "/assets/Pakaian/Yokai.png";
 const imgPKotekai = "/assets/Pakaian/Kotekai.webp";
 
@@ -54,6 +55,9 @@ const imgMKueSaguBagea  = "/assets/Makanan/Kue_Sagu_Bagea.png";
 const imgMPapeda  = "/assets/Makanan/Papeda.png";
 const imgMSinole  = "/assets/Makanan/Sinole.jpg";
 const imgMUlatSagu  = "/assets/Makanan/Ulat_Sagu.png";
+
+// <-------- Assets Lainnya (L) --------> //
+const imgLPetaPapua = "/assets/Lainnya/Peta.png";
 
 
 const imageAssets = {

@@ -27,11 +27,11 @@ const SearchBar = () => {
   };
 
   return (
-    <form className="flex justify-center items-center mx-auto mt-32 w-screen" onSubmit={handleSubmit}>
+    <form className="flex justify-center items-center w-screen mx-auto " onSubmit={handleSubmit}>
       <label htmlFor="simple-search" className="sr-only">
         Search
       </label>
-      <div className="relative w-1/2">
+      <div className="relative w-3/4 lg:w-2/4">
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"></div>
         <input
           type="text"
@@ -39,6 +39,7 @@ const SearchBar = () => {
           className="bg-white border text-green-900 text-sm rounded-lg block w-full pl-4 p-2.5"
           value={searchText}
           onChange={handleInputChange}
+          placeholder="Search here.."
           required
         />
         {isSearching ? (
@@ -67,7 +68,7 @@ const SearchBar = () => {
         ) : (
           <button
             type="submit"
-            className="absolute inset-y-0 right-0 p-2.5 text-sm font-medium text-white bg-green-700 rounded-lg border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            className="absolute inset-y-0 right-0 p-2.5 text-sm font-medium text-white bg-primary rounded-lg border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-primary dark:hover:bg-green-800 dark:focus:ring-green-800"
           >
             <svg
               className="w-4 h-4"

@@ -13,7 +13,7 @@ const ExploreSlider = (props) => {
     infinite: true,
     speed: 1000,
     slidesToShow:3,
-    autoplay: true, 
+    autoplay: false, 
     autoplaySpeed: 2000,
     arrows : true,
     pauseOnHover: true,

@@ -45,7 +45,7 @@ export default function NavBar() {
   
 
   return (
-    <header className="bg-white fixed top-0 left-0 right-0 z-10">
+    <header className="bg-secondary fixed top-0 left-0 right-0 z-50">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -60,7 +60,7 @@ export default function NavBar() {
           <button
             type="button"
             onClick={toggleMobileMenu}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon
@@ -116,7 +116,7 @@ export default function NavBar() {
                       leaveFrom="opacity-100 translate-y-0 delay-500"
                       leaveTo="opacity-0 translate-y-1 delay-500"
                     >
-                      <Popover.Panel className="absolute left-3 top-full z-10 mt-3 w-48 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                      <Popover.Panel className="absolute left-3 top-full z-10 mt-3 w-48 overflow-hidden rounded-3xl bg-secondary shadow-lg ring-1 ring-gray-900/5">
                         {dropdown.map((item) => (
                           <div
                             key={item.name}
@@ -125,7 +125,7 @@ export default function NavBar() {
                             <div className="flex-auto">
                               <a
                                 href={item.href}
-                                className="block font-semibold text-gray-900 hover:text-green-600"
+                                className="block font-semibold text-white hover:text-green-600"
                               >
                                 {item.name}
                                 <span className="absolute inset-0" />
@@ -163,13 +163,13 @@ export default function NavBar() {
 <Popover.Group className="hidden lg:flex lg:gap-x-5 mx-10">
   <a
     href={Routes.HOME_PAGE}
-    className="text-sm font-semibold leading-6 text-gray-700 hover:text-green-600 hover:bg-gray-100 px-4 py-2 rounded"
+    className="text-sm font-semibold leading-6 text-white hover:text-green-600  px-4 py-2 rounded"
   >
     Utama
   </a>
   <a
     href={Routes.KILAS_PAPUA}
-    className="text-sm font-semibold leading-6 text-gray-900 hover:text-green-600 hover:bg-gray-100 px-4 py-2 rounded"
+    className="text-sm font-semibold leading-6 text-white hover:text-green-600  px-4 py-2 rounded"
   >
     Kilas Papua
   </a>
@@ -180,7 +180,7 @@ export default function NavBar() {
     <a
       href="#"
       onClick={toggleDropdown}
-      className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:text-green-600 hover:bg-gray-100 px-4 py-2 rounded"
+      className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white hover:text-green-600  px-4 py-2 rounded"
     >
       Ada apa di Papua
       <ChevronDownIcon
@@ -190,17 +190,17 @@ export default function NavBar() {
     </a>
     {dropdownOpen && (
   <div
-    className="absolute -left-2 top-full z-10 mt-3 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 p-4 delay-150 hover:delay-500 transition-all duration-300"
+    className="absolute -left-2 top-full z-10 mt-3 overflow-hidden rounded-3xl bg-secondary shadow-lg ring-1 ring-gray-900/5 p-4 delay-150 hover:delay-500 transition-all duration-300"
   >
     {dropdown.map((item) => (
       <div
         key={item.name}
-        className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-100"
+        className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 "
       >
         <div className="flex-auto">
           <a
             href={item.href}
-            className="block font-semibold text-gray-900 hover:text-green-600"
+            className="block font-semibold text-white hover:text-green-600"
           >
             {item.name}
             <span className="absolute inset-0" />
@@ -214,13 +214,13 @@ export default function NavBar() {
   </div>
   <a
     href={Routes.GALERI_PAPUA}
-    className="text-sm font-semibold leading-6 text-gray-900 hover:text-green-600 hover:bg-gray-100 px-4 py-2 rounded"
+    className="text-sm font-semibold leading-6 text-white hover:text-green-600  px-4 py-2 rounded"
   >
     Galeri Papua
   </a>
   <a
     href={Routes.DEVELOPER_PAGE}
-    className="text-sm font-semibold leading-6 text-gray-900 hover:text-green-600 hover:bg-gray-100 px-4 py-2 rounded"
+    className="text-sm font-semibold leading-6 text-white hover:text-green-600 px-4 py-2 rounded"
   >
     Pengembang
   </a>

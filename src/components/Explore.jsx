@@ -5,7 +5,7 @@ import ExploreSlider from "./ExploreSlider";
 
 export default function Explore(){
     return(
-        <div className=" " >
+        <div className=" mt-10 " >
             <ExploreSlider/>
         </div>
     )
