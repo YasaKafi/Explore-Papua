@@ -1,21 +1,20 @@
 import React from 'react'
 import imageAssets from '../utils/helpers'
 
-export default function CardAspek() {
+export default function CardAspek({title, desc}) {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100 border-box">
-      <div className="flex justify-center items-center border-box">
-        <div className="bg-black shadow-md rounded-lg p-8 relative border-box">
-          <div className="w-24 h-24 bg-blue-500 rounded-full absolute z-2 -top-11 -left10 ">
-            <img className="w-24 h-24  rounded-full object-cover" src={imageAssets.imgFranskaisepo} alt="Workflow" />
-          </div>
-          <h2 className="text-xl text-center relative -top-5 font-semibold ">Card Section</h2>
-          <p className='font-poppins'>This is a sample card section with a circular container.</p>
-          <div className="bg-white">
-          
-        </div>
-        </div>
+  
+    <div className="col-span-1 bg-[#414141] shadow-md rounded-lg p-8 relative border-box w-[350px] md:w-96 h-84 md:h-80">
+      <div className='flex'>
+      <div className="w-24 h-24 bg-white shadow-xl rounded-full  absolute -top-6  ">
+        {/* <img className="w-24 h-24 rounded-full object-cover " src={imageAssets.imgFranskaisepo} alt="Workflow" /> */}
       </div>
+      <h2 className="text-lg relative font-bold left-28 -top-4 overflow-ellipsis "> {title}</h2>
+      <div className='w-40'/>
+      </div>
+      
+      <p className=" text-sm font-poppins ">{desc}</p>
     </div>
+  
   )
 }

@@ -42,5 +42,6 @@ export default function Home(){
             <GalleryPapua/>
             <FooterNew/>
         </body>
+
     );
 }
