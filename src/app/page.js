@@ -5,6 +5,7 @@ import Routes from "../routes/routes";
 import NavBar from "../components/NavBar";
 import SearchBar from "@/components/SearchBar";
 import ImageSlider from "@/components/ImageSlider";
+import ImageSliderTradisi from "@/components/ImageSlider";
 import KilasPapua from "@/components/KilasPapua"; 
 import CardExplore from "@/components/CardExplore"; 
 import Explore from "@/components/Explore";
