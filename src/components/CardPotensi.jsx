@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -44,7 +46,7 @@ export default function CardPotensi({ title, description }) {
         >
           {(isContentVisible) => (
             <div className={`max-h-0 overflow-hidden ${isContentVisible ? "max-h-[200px]" : "max-h-0"}`}>
-              <p className="text-sm text-gray-800">
+              <p className="text-sm text-white">
                 {description}
               </p>
             </div>

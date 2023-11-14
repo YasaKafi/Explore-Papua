@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import ApexCharts from "apexcharts";
 import { Colors } from "chart.js";

@@ -1,3 +1,5 @@
+"use client";
+
 import { Fragment, useState } from "react";
 import imageAssets from "../utils/helpers";
 import { Popover, Transition } from "@headlessui/react";

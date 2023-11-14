@@ -32,8 +32,14 @@ const imgSPisauBelati = "/assets/Senjata/Pisau_Belati.png";
 const imgRHonai = "/assets/Rumah_Adat/Rumah_Honai.png";
 const imgREbei = "/assets/Rumah_Adat/Rumah_Ebei.jpg";
 
-// <-------- Assets Rumah Adat (P) --------> //
+// <-------- Assets Pakaian Adat (P) --------> //
 const imgPYokai = "/assets/Pakaian/Yokai.png";
+const imgPKotekai = "/assets/Pakaian/Kotekai.webp";
+
+// <-------- Assets Pakaian Adat (P) --------> //
+const imgAFuu = "/assets/Alat_Musik/Fuu.png";
+const imgAGouto = "/assets/Alat_Musik/Gouto.png";
+const imgATifa = "/assets/Alat_Musik/Tifa.png";
 
 // <-------- Assets Pahlawan --------> //
 const imgFranskaisepo = "/assets/Pahlawan/Franskaisepo.png";
@@ -85,7 +91,10 @@ const imageAssets = {
   imgMPapeda,
   imgMSinole,
   imgMUlatSagu,
-  
+  imgPKotekai,
+  imgAFuu,
+  imgAGouto,
+  imgATifa,
 };
 
 export default imageAssets;

@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Routes from "../routes/routes";
 import NavBar from "../components/NavBar";
-import ImageSlider from "@/components/ImageSlider";
+import ImageSliderTradisi from "@/components/ImageSlider";
 import KilasPapua from "@/components/KilasPapua"; 
 import CardExplore from "@/components/CardExplore"; 
 import Explore from "@/components/Explore";
