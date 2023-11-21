@@ -4,16 +4,16 @@ import React from 'react';
 const Menu = () => {
     const products = [
         {
-            imageUrl: imageAssets.imgWPantaiHarlem,
+            imageUrl: imageAssets.imgTrRitualKematian,
             title: 'Adat Istiadat',
         },
         {
-            imageUrl: imageAssets.imgWPantaiHarlem,
-            title: 'Adat Istiadat',
+            imageUrl: imageAssets.imgMPapeda,
+            title: 'Kuliner Daerah',
         },
         {
             imageUrl: imageAssets.imgWPantaiHarlem,
-            title: 'Adat Istiadat',
+            title: 'Wisata Alam',
         },
     ];
 
