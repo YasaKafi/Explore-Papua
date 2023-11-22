@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
 import CardPotensi from "@/components/CardPotensi";
 import NavBar from "@/components/NavBar";
 import imageAssets from "@/utils/helpers";
 import PieChart from "@/components/PieChart";
 import CardAspek from "@/components/CardAspek";
-import Footer from "@/components/Footer";
+
 
 export default function PerekonomianPapua() {
 
