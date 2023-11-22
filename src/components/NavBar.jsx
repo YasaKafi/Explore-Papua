@@ -146,15 +146,7 @@ export default function NavBar() {
                     Galeri Papua
                   </a>
                 </li>
-                <li>
-                  <a
-                    href={Routes.DEVELOPER_PAGE}
-                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-green-600"
-                  >
-                    <FontAwesomeIcon icon={faUser} className="mr-5" />
-                    Pengembang
-                  </a>
-                </li>
+                
               </ul>
             </div>
           </div>
@@ -218,12 +210,7 @@ export default function NavBar() {
   >
     Galeri Papua
   </a>
-  <a
-    href={Routes.DEVELOPER_PAGE}
-    className="text-sm font-semibold leading-6 text-white hover:text-green-600 px-4 py-2 rounded"
-  >
-    Pengembang
-  </a>
+  
 </Popover.Group>
 
 
